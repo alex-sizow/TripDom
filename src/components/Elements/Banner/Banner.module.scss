@@ -1,0 +1,41 @@
+.banner {
+	margin-top: 20px;
+	width: 806px;
+	height: 363px;
+	background: #ffffff;
+	border-radius: 10px 10px 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 806px !important;
+		height: 288.83px;
+		column-gap: 58px;
+		&_text {
+			width: 297px;
+			height: 101px;
+			&_title {
+				font-weight: 500;
+				font-size: 22px;
+				line-height: 26px;
+				text-align: center;
+				letter-spacing: -0.24px;
+			}
+			&_main {
+				margin-top: 15px;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 20px;
+				text-align: center;
+				letter-spacing: -0.24px;
+			}
+		}
+	}
+}
+
+.swiper-pagination-bullet-active {
+	background-color: red;
+}
