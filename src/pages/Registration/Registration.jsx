@@ -6,7 +6,7 @@ import Styles from './Registration.module.scss';
 const Registration = () => {
 	return (
 		<div className={Styles.registration}>
-			<div>
+			<div className={Styles.left}>
 				<div className={Styles.registration__recently}>
 					<div className={Styles.registration__recently_title}>
 						Недавно заходили на сайт с этого устройства

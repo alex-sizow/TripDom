@@ -2,12 +2,18 @@
 	background: #ffffff;
 }
 .header {
-	width: 1440px;
+	max-width: 1440px;
+	width: 100%;
 	margin: 0 auto;
 	background: #ffffff;
 	height: 60px;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
+	padding: 0 5px;
+	&__logocontainer {
+		display: flex;
+	}
 
 	&__logo {
 		display: flex;
@@ -22,11 +28,13 @@
 		margin-right: 40px;
 	}
 	&__language {
-		margin-left: 807px;
 		width: 96px;
 		height: 20px;
 		display: flex;
 		justify-content: space-between;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
 		button {
 			background-color: white;
 			font-weight: 400;

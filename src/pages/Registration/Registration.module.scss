@@ -1,10 +1,12 @@
 .registration {
-	width: 1440px;
 	margin: 30px auto 0px;
 	display: flex;
 	column-gap: 20px;
+	padding: 0 5px;
+	.left {
+		width: 58%;
+	}
 	&__recently {
-		width: 806px;
 		height: 363px;
 		background: #ffffff;
 		border-radius: 10px 10px 0px 0px;
@@ -52,5 +54,9 @@
 				}
 			}
 		}
+	}
+
+	&__banners {
+		width: 33%;
 	}
 }
