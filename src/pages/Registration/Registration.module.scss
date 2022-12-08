@@ -10,7 +10,7 @@
 		height: 363px;
 		background: #ffffff;
 		border-radius: 10px 10px 0px 0px;
-		padding: 30px;
+		padding: 4%;
 		&_title {
 			font-weight: 500;
 			font-size: 22px;
@@ -29,7 +29,7 @@
 			display: flex;
 			column-gap: 20px;
 			&_item {
-				width: 192px;
+				width: 25%;
 				height: 225px;
 				border: 0.5px solid #bcbcbc;
 				border-radius: 20px;
@@ -43,7 +43,7 @@
 				align-items: center;
 				div {
 					width: 96px;
-					height: 152px;
+
 					img {
 						margin-bottom: 20px;
 					}
