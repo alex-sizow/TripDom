@@ -1,0 +1,191 @@
+.container {
+	display: flex;
+	column-gap: 20px;
+	padding-top: 30px;
+	div {
+		border-radius: 10px;
+		background: #ffffff;
+	}
+}
+
+.toggles {
+	width: 343px;
+	height: 130px;
+	padding: 20px;
+	&__title {
+		font-family: 'SF UI Display';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 22px;
+		line-height: 26px;
+		display: flex;
+		align-items: center;
+		letter-spacing: -0.24px;
+		margin-bottom: 17px;
+	}
+	.toggle {
+		width: 100%;
+		height: 40px;
+		background: #f5f5f5;
+		border-radius: 10px;
+		position: relative;
+		padding: 3px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		&_text {
+			z-index: 10;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 50%;
+			user-select: none;
+			background: none;
+		}
+		&_button {
+			z-index: 6;
+			position: absolute;
+			left: 1%;
+			background: #ffffff;
+			border-radius: 8px;
+			height: 34px;
+			width: 49%;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+		}
+
+		&_trigger {
+			z-index: 6;
+			position: absolute;
+			background: #ffffff;
+			border-radius: 8px;
+			height: 34px;
+			width: 49%;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+			left: 50%;
+		}
+	}
+}
+
+.form {
+	width: 48%;
+	height: 814px;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	row-gap: 14px;
+	&__cover {
+		width: 100%;
+		height: 100px;
+		background: #f5f5f5;
+		border-radius: 20px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-family: 'SF UI Text';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: center;
+		letter-spacing: -0.24px;
+		color: #6c27ab;
+		column-gap: 10px;
+		div {
+			background: none;
+		}
+	}
+
+	&__input {
+		position: relative;
+		&_title {
+			font-family: 'SF UI Text';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: -0.24px;
+			margin-bottom: 8px;
+		}
+		input {
+			width: 100%;
+			height: 45px;
+			border: 2px solid #f5f5f5;
+			border-radius: 10px;
+			padding: 12px 16px;
+		}
+		::placeholder {
+			font-family: 'SF UI Text';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 14px;
+			line-height: 17px;
+			letter-spacing: -0.24px;
+			color: #bcbcbc;
+		}
+		svg {
+			position: absolute;
+			margin-top: 11px;
+			left: 94%;
+		}
+	}
+
+	&__check {
+		display: flex;
+		align-items: center;
+		column-gap: 10px;
+		&_box {
+			display: none;
+		}
+		&_fake {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 24px;
+			height: 24px;
+			border: #6c27ab 1px solid;
+			border-radius: 22px;
+			padding: 4px;
+			position: relative;
+		}
+		&_fake::before {
+			content: '';
+			display: block;
+			width: 24px;
+			height: 24px;
+			border-radius: 22px;
+			left: 50%;
+			top: 50%;
+			position: absolute;
+			background-image: url('/ToggleCircleButton.svg');
+			transform: translate(-50%, -50%);
+			opacity: 0;
+			transition: 0.2s;
+		}
+
+		&_box:checked + &_fake::before {
+			opacity: 1;
+		}
+
+		&_text {
+		}
+	}
+
+	&__button {
+		height: 40px;
+		margin-top: 32px;
+		background: #6c27ab;
+		border-radius: 10px;
+		color: #ffffff;
+		font-family: 'SF UI Text';
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 20px;
+		letter-spacing: -0.24px;
+	}
+}

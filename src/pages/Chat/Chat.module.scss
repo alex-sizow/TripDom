@@ -1,0 +1,90 @@
+.container {
+	padding-top: 30px;
+	display: flex;
+	column-gap: 20px;
+	padding-bottom: 30px;
+}
+
+.list {
+	width: 464px;
+	height: 1031px;
+	&__search {
+		margin-bottom: 15px;
+		position: relative;
+		input {
+			width: 100%;
+			height: 56px;
+			background: #ffffff;
+			border-radius: 10px;
+			padding-left: 50px;
+		}
+		input::placeholder {
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+			/* identical to box height, or 125% */
+
+			display: flex;
+			align-items: center;
+			letter-spacing: -0.24px;
+
+			color: #bcbcbc;
+		}
+		svg {
+			position: absolute;
+			left: 20px;
+			top: 16px;
+		}
+	}
+	&__items {
+		height: 960px;
+		background: #ffffff;
+		border-radius: 20px;
+		padding-top: 10px;
+		padding-left: 16px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 17px;
+		&_item {
+			display: flex;
+			column-gap: 16px;
+			img {
+				width: 50px;
+			}
+			&_info {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				padding: 1px 0;
+				&_name {
+					font-family: 'SF UI Display';
+					font-style: normal;
+					font-weight: 500;
+					font-size: 16px;
+					line-height: 19px;
+					letter-spacing: -0.24px;
+				}
+				&_message {
+					display: flex;
+					align-items: center;
+					column-gap: 8px;
+					font-family: 'SF UI Text';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 14px;
+					line-height: 17px;
+					letter-spacing: -0.24px;
+					color: #bcbcbc;
+				}
+			}
+		}
+	}
+}
+
+.message {
+	background: #ffffff;
+	border-radius: 20px;
+	width: 60%;
+	height: 1031px;
+}

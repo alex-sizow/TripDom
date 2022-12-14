@@ -1,0 +1,36 @@
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('fonts/SF-UI-Display-Regular.eot');
+	src: local('☺'),
+		url('fonts/SF-UI-Display-Regular.woff') format('woff'),
+		url('fonts/SF-UI-Display-Regular.ttf') format('truetype'),
+		url('fonts/SF-UI-Display-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Display';
+	src: url('fonts/SF-UI-Display-Medium.eot');
+	src: local('☺'),
+		url('fonts/SF-UI-Display-Medium.woff') format('woff'),
+		url('fonts/SF-UI-Display-Medium.ttf') format('truetype'),
+		url('fonts/SF-UI-Display-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('fonts/SF-UI-Text-Regular.eot');
+	src: local('☺'),
+		url('fonts/SF-UI-Text-Regular.woff') format('woff'),
+		url('fonts/SF-UI-Text-Regular.ttf') format('truetype'),
+		url('fonts/SF-UI-Text-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+body {
+	font-family: 'SF UI Display';
+}

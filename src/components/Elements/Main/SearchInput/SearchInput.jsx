@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './SearchInput.module.scss';
 
-const SearchInput = () => {
+const SearchInput = ({ mapToggle, map }) => {
 	return (
 		<div className={styles.search}>
 			<div className={styles.searchinput}>
@@ -10,7 +10,7 @@ const SearchInput = () => {
 					className={styles.searchinput__input}
 				/>
 			</div>
-			<button className={styles.button}>
+			<button className={styles.button} onClick={mapToggle}>
 				<svg
 					width='24'
 					height='24'

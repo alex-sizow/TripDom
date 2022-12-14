@@ -6,13 +6,18 @@
 	column-gap: 20px;
 	display: flex;
 	cursor: pointer;
-
+	@media (max-width: 1260px) {
+		padding: 15px;
+	}
 	&__image {
 	}
 	&__info {
 		display: flex;
 		flex-direction: column;
 		row-gap: 20px;
+		@media (max-width: 1260px) {
+			row-gap: 15px;
+		}
 		&_title {
 			font-weight: 500;
 			font-size: 22px;
@@ -35,13 +40,14 @@
 		}
 		&_description {
 			width: 60%;
+			font-family: 'SF UI Text';
 			font-weight: 400;
 			font-size: 16px;
 			line-height: 20px;
 		}
 		@media (max-width: 1260px) {
 			&_description {
-				width: 80%;
+				width: 100%;
 			}
 		}
 		&_status {
@@ -53,19 +59,15 @@
 				display: flex;
 				align-items: center;
 				column-gap: 8px;
+				img {
+					width: 24px;
+				}
 				div {
 					display: inline;
 					a {
 						color: #6c27ab;
 					}
 				}
-			}
-		}
-		@media (max-width: 1260px) {
-			&_status {
-				flex-direction: row;
-				row-gap: 8px;
-				column-gap: 8px;
 			}
 		}
 	}

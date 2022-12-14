@@ -1,0 +1,186 @@
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('fonts/SF-UI-Text-Regular.eot');
+	src: local('☺'),
+		url('fonts/SF-UI-Text-Regular.woff') format('woff'),
+		url('fonts/SF-UI-Text-Regular.ttf') format('truetype'),
+		url('fonts/SF-UI-Text-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
+.event {
+	display: flex;
+	column-gap: 20px;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	&__about {
+		width: 1070px;
+		height: 100px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 8px;
+		&_image {
+			display: flex;
+			padding: 30px;
+			background: #ffffff;
+			height: 326px;
+			border-radius: 10px 10px 0px 0px;
+			&_back {
+				width: 100%;
+				height: 266px;
+				border-radius: 18px;
+				background: url('/EventImageLarge.png') no-repeat;
+			}
+		}
+		&_name {
+			display: flex;
+			flex-direction: column;
+			row-gap: 20px;
+			padding: 30px;
+
+			background: #ffffff;
+			padding-bottom: 30px;
+			&_title {
+				font-family: 'SF UI Display';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 22px;
+				line-height: 26px;
+				letter-spacing: -0.24px;
+				background: #ffffff;
+				display: flex;
+				justify-content: space-between;
+				width: 100%;
+			}
+			&_tags {
+				display: flex;
+				column-gap: 10px;
+				button {
+					background: #ededed;
+					border-radius: 5px;
+					padding: 0 10px;
+					height: 24px;
+					font-weight: 400;
+					font-size: 12px;
+					line-height: 14px;
+					letter-spacing: 0.3px;
+					font-family: 'SF UI Text';
+				}
+			}
+		}
+		&_description {
+			background: white;
+			font-family: 'SF UI Text';
+			padding: 30px;
+			font-weight: 400;
+		}
+		&_state {
+			padding: 32px 30px;
+			background: #ffffff;
+			border-radius: 0px 0px 10px 10px;
+
+			&_status {
+				display: flex;
+				flex-direction: column;
+				row-gap: 10px;
+
+				div {
+					display: flex;
+					align-items: center;
+					column-gap: 8px;
+					img {
+						width: 24px;
+					}
+					div {
+						display: inline;
+						a {
+							color: #6c27ab;
+						}
+					}
+				}
+			}
+		}
+		&_contacts {
+			background: #ffffff;
+			border-radius: 10px;
+			margin-top: 12px;
+			padding: 30px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			&_number {
+				font-family: 'SF UI Text';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 20px;
+				letter-spacing: -0.24px;
+				color: #bcbcbc;
+				margin-top: 16px;
+			}
+			&_contact {
+				display: flex;
+				img {
+					border-radius: 25px;
+					width: 47px;
+				}
+				&_status {
+					margin-left: 12px;
+					height: 47px;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					&_name {
+						font-family: 'SF UI Display';
+						font-style: normal;
+						font-weight: 500;
+						font-size: 22px;
+						line-height: 26px;
+					}
+					&_time {
+						font-weight: 400;
+						font-size: 16px;
+						line-height: 20px;
+						letter-spacing: -0.24px;
+					}
+				}
+			}
+		}
+	}
+	&__buttons {
+		background: #ffffff;
+		width: 343px;
+		padding: 30px 16px;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		row-gap: 20px;
+		&_join {
+			background: #6c27ab;
+			border-radius: 10px;
+			height: 40px;
+			font-family: 'SF UI Text';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: -0.24px;
+			color: #ffffff;
+		}
+		&_chat {
+			background: white;
+			color: #6c27ab;
+			border-radius: 10px;
+			border: 1px solid #6c27ab;
+			height: 40px;
+			font-family: 'SF UI Text';
+			font-style: normal;
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 20px;
+			letter-spacing: -0.24px;
+		}
+	}
+}
