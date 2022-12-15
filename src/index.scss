@@ -90,3 +90,13 @@ button {
 .swiper-pagination-bullet-active {
 	background: #6c27ab;
 }
+
+.intl-tel-input {
+	width: 100% !important;
+	input {
+		width: 100%;
+	}
+	.flag-container {
+		left: 20px;
+	}
+}

@@ -1,9 +1,14 @@
 import React from 'react';
 import Banner from '../../components/Elements/Banner/Banner';
 import RegForm from '../../components/Elements/RegForm/RegForm';
+import RegFormInit from '../../components/Elements/RegForm/RegFormInit';
 import Styles from './Registration.module.scss';
 
 const Registration = () => {
+	const [click, setClick] = React.useState(false);
+	const handleClick = () => {
+		setClick(!click);
+	};
 	return (
 		<div className={Styles.registration}>
 			<div className={Styles.left}>
@@ -41,7 +46,16 @@ const Registration = () => {
 				<Banner
 					className={Styles.registration__banners}></Banner>
 			</div>
-			<RegForm className={Styles.registration__form}></RegForm>
+
+			{click ? (
+				<RegFormInit
+					className={Styles.registration__form}
+					handleClick={handleClick}></RegFormInit>
+			) : (
+				<RegForm
+					handleClick={handleClick}
+					className={Styles.registration__form}></RegForm>
+			)}
 		</div>
 	);
 };
