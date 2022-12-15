@@ -1,6 +1,17 @@
+@font-face {
+	font-family: 'SF UI Text';
+	src: url('fonts/SF-UI-Text-Regular.eot');
+	src: local('☺'),
+		url('fonts/SF-UI-Text-Regular.woff') format('woff'),
+		url('fonts/SF-UI-Text-Regular.ttf') format('truetype'),
+		url('fonts/SF-UI-Text-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+
 .form {
 	width: 42%;
-
+	font-family: 'SF UI Text';
 	height: 435px;
 	background: #ffffff;
 	border-radius: 10px;
@@ -75,6 +86,7 @@
 			border-radius: 10px;
 			background-color: #ffffff;
 			color: #6c27ab;
+			font-style: normal;
 		}
 		&_description {
 			font-weight: 400;
